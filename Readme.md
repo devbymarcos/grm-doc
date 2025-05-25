@@ -39,3 +39,34 @@
   ]
 }
 ```
+
+
+## Estrutura do JSON de Template
+
+| Propriedade | Tipo     | Obrigatório | Descrição                                                                                              |
+| ----------- | -------- | ----------- | ------------------------------------------------------------------------------------------------------ |
+| `title`     | `string` | Sim         | Título da seção do template, que geralmente aparece como cabeçalho.                                    |
+| `fields`    | `array`  | Sim         | Lista de campos que serão exibidos na seção do template. Cada campo é um objeto com `label` e `value`. |
+
+
+## Estrutura dos campos em fields
+
+| Propriedade | Tipo     | Obrigatório | Descrição                                                                                          |
+| ----------- | -------- | ----------- | -------------------------------------------------------------------------------------------------- |
+| `label`     | `string` | Sim         | Texto exibido para descrever o campo na interface (rótulo).                                        |
+| `value`     | `string` | Sim         | Valor dinâmico que será exibido no campo, geralmente usando placeholders `{{}}` para substituição. |
+
+
+```
+{
+  "title": "DADOS E STATUS",
+  "fields": [
+    { "label": "Estado de Funcionamento", "value": "{{funcionamento}}" },
+    { "label": "Marca do Relógio", "value": "{{marcaRep}}" },
+    { "label": "Modelo", "value": "{{modelo}}" }
+  ]
+}
+
+
+```
+
