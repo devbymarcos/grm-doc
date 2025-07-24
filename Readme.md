@@ -70,3 +70,13 @@
 
 ```
 
+## Padronização de Selects
+São as opções disponiveis no checklist dos formularios
+
+| Variante               | Tipo                                                                                                   |
+| ---------------------- | ------------------------------------------------------------------------------------------------------ |
+| Limpeza                | `"options": ["Realizada", "Não Realizada", "Não aplicavel "]`                                          |
+| Recursos essenciais    | `"options": ["Ok", "Necessário troca", "Corrigido na preventiva", "Não realizado" ]`                   |   
+| Teste                  | `"options": ["Passou", "Não passou (agendar correção)"]`|                                              |
+
+
